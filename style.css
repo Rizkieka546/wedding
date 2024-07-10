@@ -467,6 +467,7 @@ footer li {
 
 .info, .story, .gallery, .rsvp, .gifts {
   background-image: url(img/kertas.jpeg);
+  border: 1px solid #636363;
 }
 
 @keyframes rotating {
