@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #830f00;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/FotoCover.jpeg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -80,7 +80,7 @@ body {
 }
 
 .home {
-  background-image: url(img/bg.png);
+  background-image: url(img/kertas.jpeg);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -108,7 +108,7 @@ body {
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: #636363;
 }
 
 .home .couple {
@@ -144,7 +144,7 @@ body {
 
 .info {
   background-color: var(--bg);
-  color: white;
+  color: #636363;
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -160,7 +160,7 @@ body {
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
+  color: #636363 !important;
   border: 1px solid #999;
 }
 
@@ -192,7 +192,7 @@ body {
 .gallery span,
 .gifts span {
   text-transform: uppercase;
-  color: #666;
+  color: #636363;
   font-size: 0.9rem;
   letter-spacing: 1px;
   display: block;
@@ -205,6 +205,7 @@ body {
 .gifts p {
   font-size: 1rem;
   font-weight: 300;
+  /* color: #636363; */
 }
 
 .timeline {
@@ -242,7 +243,7 @@ body {
 .timeline li .timeline-image {
   width: 160px;
   height: 160px;
-  background-color: #ccc;
+  background-color: #fff;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -279,8 +280,8 @@ body {
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid #636363;
+  border-right: 0 solid #636363;
   border-bottom: 14px solid transparent;
   top: 81px;
   right: -13px;
@@ -312,34 +313,39 @@ body {
   background-color: var(--bg);
 }
 
+.rsvp .container {
+  border: 1px solid #636363;
+  padding: 30px;
+}
+
 .rsvp h2 {
   font-size: 4.5rem;
 }
 
 .rsvp p {
-  color: white;
+  color: #636363;
 }
 
 .rsvp form label {
-  color: white;
+  color: #636363;
 }
 
 .rsvp button {
   background-color: var(--pink);
-  color: white;
+  color: #636363;
   border: 1px solid var(--pink);
 }
 
 .rsvp button:hover {
-  background-color: white;
+  background-color: #636363;
   color: var(--pink);
-  border: 1px solid white;
+  border: 1px solid #636363;
 }
 
 footer {
   padding: 3rem;
   background-color: var(--pink);
-  color: white;
+  color: #636363;
 }
 
 footer a {
@@ -349,7 +355,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: #636363;
 }
 
 footer li {
@@ -366,7 +372,7 @@ footer li {
   bottom: 2.5rem;
   right: 2rem;
   cursor: pointer;
-  color: white;
+  color: #636363;
   opacity: 0.5;
   mix-blend-mode: difference;
   animation: rotating 4s linear infinite;
@@ -375,6 +381,92 @@ footer li {
   justify-content: center;
   align-items: center;
   line-height: 0;
+}
+
+.rsvp {
+  background-color: var(--bg);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.rsvp h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #636363;
+}
+
+.rsvp form label {
+  color: #636363;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: #fff;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: #636363;
+  color: var(--pink);
+  border: 1px solid #636363;
+}
+
+
+/* Contact Section */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #636363;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #636363;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.info, .story, .gallery, .rsvp, .gifts {
+  background-image: url(img/kertas.jpeg);
 }
 
 @keyframes rotating {
@@ -492,4 +584,8 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+  /* .rsvp .my-form {
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
 }
