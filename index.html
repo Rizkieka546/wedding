@@ -95,7 +95,7 @@
             <h3>Held on Saturday 10 August 2024 at Kampung Nelayan Resort.</h3>
             <p>
               Therefore, with all due respect, we intend to invite
-              Bapak/Ibu/Saudara/i, to attend our wedding <br />
+              <span>Bapak/Ibu/Saudara/i</span>, to attend our wedding <br />
               and we couldn't imagine it without you
             </p>
           </div>
@@ -550,7 +550,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const nama = urlParams.get("n") || "";
       const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
-      const namaContainer = document.querySelector(".hero h4 span");
+      const namaContainer = document.querySelector(".hero h4 span", ".home p span");
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#nama").value = nama;
